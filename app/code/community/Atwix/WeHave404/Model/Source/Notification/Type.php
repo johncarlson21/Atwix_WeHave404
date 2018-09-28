@@ -19,7 +19,7 @@
  * New updates from John Carlson
  */
 
-class Atwix_WeHave404_Model_Source_Notification_Type
+class Atwix_Wehave404_Model_Source_Notification_Type
 {
     public function toOptionArray()
     {

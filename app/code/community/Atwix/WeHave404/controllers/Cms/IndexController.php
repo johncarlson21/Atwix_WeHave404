@@ -20,7 +20,7 @@
 
 require_once Mage::getModuleDir('controllers', 'Mage_Cms') . DS . 'IndexController.php';
 
-class Atwix_WeHave404_Cms_IndexController extends Mage_Cms_IndexController
+class Atwix_Wehave404_Cms_IndexController extends Mage_Cms_IndexController
 {
     /**
      * Render CMS 404 Not found page and send notification to configured email address

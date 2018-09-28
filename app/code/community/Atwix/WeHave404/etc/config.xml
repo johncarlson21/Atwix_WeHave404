@@ -21,22 +21,27 @@
 -->
 <config>
     <modules>
-        <Atwix_WeHave404>
+        <Atwix_Wehave404>
             <version>0.2.0</version>
-        </Atwix_WeHave404>
+        </Atwix_Wehave404>
     </modules>
     <global>
         <helpers>
             <atwix_wehave404>
-                <class>Atwix_WeHave404_Helper</class>
+                <class>Atwix_Wehave404_Helper</class>
             </atwix_wehave404>
         </helpers>
+        <blocks>
+            <atwix_wehave404>
+                <class>Atwix_Wehave404_Block</class>
+            </atwix_wehave404>
+        </blocks>
         <models>
             <atwix_wehave404>
-                <class>Atwix_WeHave404_Model</class>
+                <class>Atwix_Wehave404_Model</class>
             </atwix_wehave404>
             <atwix_mysql4>
-                <class>Atwix_WeHave404_Model_Mysql4</class>
+                <class>Atwix_Wehave404_Model_Mysql4</class>
                 <entities>
                     <wehave404>
                         <table>at_404s</table>
@@ -56,7 +61,7 @@
         <resources>
             <wehave404_setup>
                 <setup>
-                    <module>Atwix_WeHave404</module>
+                    <module>Atwix_Wehave404</module>
                 </setup>
                 <connection>
                     <use>core_setup</use>
@@ -79,7 +84,7 @@
             <cms>
                 <args>
                     <modules>
-                        <atwix_wehave404 before="Mage_Cms">Atwix_WeHave404_Cms</atwix_wehave404>
+                        <atwix_wehave404 before="Mage_Cms">Atwix_Wehave404_Cms</atwix_wehave404>
                     </modules>
                 </args>
             </cms>
@@ -90,7 +95,7 @@
             <wehave404>
                 <use>admin</use>
                 <args>
-                    <module>Atwix_WeHave404</module>
+                    <module>Atwix_Wehave404</module>
                     <frontName>admin_wehave404</frontName>
                 </args>
             </wehave404>
@@ -98,11 +103,11 @@
     </admin>
     <adminhtml>
         <menu>
-            <wehave404 module="wehave404">
+            <wehave404 module="atwix_wehave404">
                 <title>Atwix 404s</title>
                 <sort_order>70</sort_order>
                 <children>
-                    <wehave404 module="wehave404">
+                    <wehave404 module="atwix_wehave404">
                         <title>Manage 404s</title>
                         <sort_order>0</sort_order>
                         <action>admin_wehave404/adminhtml_wehave404</action>
@@ -117,7 +122,7 @@
                 </all>
                 <admin>
                     <children>
-                        <wehave404 translate="title" module="wehave404">
+                        <wehave404 translate="title" module="atwix_wehave404">
                             <title>Atwix 404s</title>
                             <sort_order>1000</sort_order>
                             <children>

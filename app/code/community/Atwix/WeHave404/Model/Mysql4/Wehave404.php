@@ -1,5 +1,5 @@
 <?php
-class Atwix_WeHave404_Model_Mysql4_Wehave404 extends Mage_Core_Model_Mysql4_Abstract
+class Atwix_Wehave404_Model_Mysql4_Wehave404 extends Mage_Core_Model_Mysql4_Abstract
 {
     protected function _construct()
     {

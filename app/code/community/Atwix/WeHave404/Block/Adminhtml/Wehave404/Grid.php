@@ -1,6 +1,6 @@
 <?php
 
-class Atwix_WeHave404_Block_Adminhtml_Wehave404_Grid extends Mage_Adminhtml_Block_Widget_Grid
+class Atwix_Wehave404_Block_Adminhtml_Wehave404_Grid extends Mage_Adminhtml_Block_Widget_Grid
 {
 
 		public function __construct()
@@ -9,7 +9,7 @@ class Atwix_WeHave404_Block_Adminhtml_Wehave404_Grid extends Mage_Adminhtml_Bloc
 				$this->setId("404Grid");
 				$this->setDefaultSort("at_date");
 				$this->setDefaultDir("DESC");
-				$this->setSaveParametersInSession(true);
+				//$this->setSaveParametersInSession(true);
 		}
 
 		protected function _prepareCollection()

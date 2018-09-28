@@ -21,9 +21,9 @@
 -->
 <config>
     <modules>
-        <Atwix_WeHave404>
+        <Atwix_Wehave404>
             <active>true</active>
             <codePool>community</codePool>
-        </Atwix_WeHave404>
+        </Atwix_Wehave404>
     </modules>
 </config>

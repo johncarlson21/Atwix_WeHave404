@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <wehave404_adminhtml_wehave404_index>
+        <reference name="content">
+            <block type="atwix_wehave404/adminhtml_wehave404" name="wehave404" />
+        </reference>
+    </wehave404_adminhtml_wehave404_index>
+</layout>

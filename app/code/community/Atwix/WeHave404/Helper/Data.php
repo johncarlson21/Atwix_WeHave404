@@ -18,7 +18,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Atwix_WeHave404_Helper_Data extends Mage_Core_Helper_Abstract
+class Atwix_Wehave404_Helper_Data extends Mage_Core_Helper_Abstract
 {
     const EMAIL_TEMPLATE_ID = 'atwix_wehave404_notification';
     const DEFAULT_RECIPIENT_NAME = 'Support Team';
