@@ -35,6 +35,14 @@
             <atwix_wehave404>
                 <class>Atwix_WeHave404_Model</class>
             </atwix_wehave404>
+            <atwix_mysql4>
+                <class>Atwix_WeHave404_Model_Mysql4</class>
+                <entities>
+                    <wehave404>
+                        <table>at_404s</table>
+                    </wehave404>
+                </entities>
+            </atwix_mysql4>
         </models>
         <template>
             <email>
@@ -45,6 +53,26 @@
                 </atwix_wehave404_notification>
             </email>
         </template>
+        <resources>
+            <wehave404_setup>
+                <setup>
+                    <module>Atwix_WeHave404</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </wehave404_setup>
+            <wehave404_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </wehave404_write>
+            <wehave404_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </wehave404_read>
+        </resources>
     </global>
     <frontend>
         <routers>
@@ -57,6 +85,60 @@
             </cms>
         </routers>
     </frontend>
+    <admin>
+        <routers>
+            <wehave404>
+                <use>admin</use>
+                <args>
+                    <module>Atwix_WeHave404</module>
+                    <frontName>admin_wehave404</frontName>
+                </args>
+            </wehave404>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <wehave404 module="wehave404">
+                <title>Atwix 404s</title>
+                <sort_order>70</sort_order>
+                <children>
+                    <wehave404 module="wehave404">
+                        <title>Manage 404s</title>
+                        <sort_order>0</sort_order>
+                        <action>admin_wehave404/adminhtml_wehave404</action>
+                    </wehave404>
+                </children>
+            </wehave404>
+        </menu>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <wehave404 translate="title" module="wehave404">
+                            <title>Atwix 404s</title>
+                            <sort_order>1000</sort_order>
+                            <children>
+                                <wehave404 translate="title">
+                                    <title>Manage 404s</title>
+                                    <sort_order>0</sort_order>
+                                </wehave404>
+                            </children>
+                        </wehave404>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <testimonials>
+                    <file>wehave404.xml</file>
+                </testimonials>
+            </updates>
+        </layout>
+    </adminhtml>
     <default>
         <atwix_wehave404>
             <general>
