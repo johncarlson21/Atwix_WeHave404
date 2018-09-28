@@ -21,26 +21,26 @@ class Atwix_WeHave404_Block_Adminhtml_Wehave404_Grid extends Mage_Adminhtml_Bloc
 		protected function _prepareColumns()
 		{
 				$this->addColumn("at_id", array(
-				"header" => Mage::helper("wehave404")->__("ID"),
+				"header" => Mage::helper("adminhtml")->__("ID"),
 				"align" =>"right",
 				"width" => "50px",
 			    "type" => "number",
 				"index" => "at_id",
 				));
 				$this->addColumn("at_url", array(
-				"header" => Mage::helper("wehave404")->__("Request URL"),
+				"header" => Mage::helper("adminhtml")->__("Request URL"),
 				"index" => "at_url"
 				));
 				$this->addColumn("at_referrer", array(
-				"header" => Mage::helper("wehave404")->__("Referral URL"),
+				"header" => Mage::helper("adminhtml")->__("Referral URL"),
 				"index" => "at_referrer",
 				));
                 $this->addColumn("at_date", array(
-				"header" => Mage::helper("wehave404")->__("Date"),
+				"header" => Mage::helper("adminhtml")->__("Date"),
 				"index" => "at_date",
 				));
                 $this->addColumn("at_count", array(
-				"header" => Mage::helper("wehave404")->__("Count"),
+				"header" => Mage::helper("adminhtml")->__("Count"),
 				"index" => "at_count",
 				));
 				

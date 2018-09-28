@@ -9,7 +9,7 @@ class Atwix_WeHave404_Model_Wehave404 extends Mage_Core_Model_Abstract
     }
 	
 	public function get404s() {
-		$results = $this->getCollection()->setOrder('at_date', 'ASC');
+		$results = $this->getCollection()->setOrder('at_date', 'DESC');
 		return $results;
 	}
 	

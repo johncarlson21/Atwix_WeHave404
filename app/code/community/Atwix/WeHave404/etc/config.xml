@@ -133,9 +133,9 @@
         </acl>
         <layout>
             <updates>
-                <testimonials>
+                <wehave404>
                     <file>wehave404.xml</file>
-                </testimonials>
+                </wehave404>
             </updates>
         </layout>
     </adminhtml>
