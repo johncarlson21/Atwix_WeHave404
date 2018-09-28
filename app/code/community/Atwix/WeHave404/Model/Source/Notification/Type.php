@@ -16,6 +16,7 @@
  * @author      Atwix Core Team
  * @copyright   Copyright (c) 2015 Atwix (http://www.atwix.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * New updates from John Carlson
  */
 
 class Atwix_WeHave404_Model_Source_Notification_Type
